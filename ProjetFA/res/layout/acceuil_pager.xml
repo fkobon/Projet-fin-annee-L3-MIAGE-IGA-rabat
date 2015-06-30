@@ -1,0 +1,207 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+	<LinearLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <info.androidhive.slidingmenu.MarqueeTextView 
+        android:id="@+id/infoGeneral"
+        android:layout_width="fill_parent"
+        android:textColor="#FFFFFF"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="3dip"
+        android:layout_marginTop="4dip"
+        android:background="#2196F3"
+        android:ellipsize="marquee"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:singleLine="true"
+        android:text="Soirée de clôture de la semaine culturelle Africaine 3eme édition vendredi 29 Avril 2015"
+        android:textAppearance="?android:attr/textAppearanceLarge" >
+     </info.androidhive.slidingmenu.MarqueeTextView>
+    <!-- View flipper Ecole D'INGENIERIE #00B7FF-->
+    
+    <info.androidhive.slidingmenu.MarqueeTextView
+        android:id="@+id/scroller"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="6sp"
+        android:layout_marginBottom="0dip"
+        android:layout_marginTop="4dip"
+        android:background="#2196F3"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:singleLine="true"
+        android:text="Ecole d'Ingénierie"
+        android:textAppearance="?android:attr/textAppearanceLarge" >
+     </info.androidhive.slidingmenu.MarqueeTextView>
+
+    <ViewFlipper
+        android:id="@+id/view_flipper"
+        android:layout_width="match_parent"
+        android:layout_height="158dp"
+        android:layout_marginBottom="6dip"
+        android:layout_marginLeft="6dip"
+        android:layout_marginRight="6dip"
+        android:layout_marginTop="0dip" >
+
+        <!-- The child Views/Layout to flip -->
+
+
+        <!-- Layout 1 for 1st Screen -->
+
+        <LinearLayout
+            android:id="@+id/layoutIng1" 
+            android:layout_width="wrap_content"
+            android:layout_height="154dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/titreIng"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:text="Rattrapage"
+                android:textColor="#191975"
+                android:textSize="25dp"
+                android:textStyle="bold" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="3ISI G2 : Monsieur Baidada sera absent le 28/04/2015 Rattrapage \n le 07/05/2015"
+                android:textStyle="bold" >
+            </TextView>
+        </LinearLayout>
+
+        <!-- Layout 2 for 2nd Screen -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Jeu d&apos;entreprises"
+                android:textColor="#191975"
+                android:textSize="25sp"
+                android:textStyle="bold" >
+            </TextView>
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/univ_loraine" />
+        </LinearLayout>
+    </ViewFlipper>
+
+    
+    
+    
+    <!-- Ecole de MANAGEMENT -->
+    
+    <info.androidhive.slidingmenu.MarqueeTextView
+        android:id="@+id/scroller1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="0dip"
+        android:layout_marginTop="3dip"
+        android:background="#26A69A"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:singleLine="true"
+        android:paddingLeft="6sp"
+        android:text="Ecole de Management"
+        android:textAppearance="?android:attr/textAppearanceLarge" >
+     </info.androidhive.slidingmenu.MarqueeTextView>
+
+    <ViewFlipper
+        android:id="@+id/view_flipperM"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="6dip"
+        android:layout_marginLeft="6dip"
+        android:layout_marginRight="6dip"
+        android:layout_marginTop="6dip"
+        android:layout_weight="0.15" >
+
+        <!-- The child Views/Layout to flip -->
+
+
+        <!-- Layout 1 for 1st Screen -->
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/titreManag1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:text="Visite Entreprise"
+                android:textColor="#191975"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView2M"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="3ISE 4ISA : Une visite d'entreprise a été organisée au profit des étudiants de la 3ème année ISE et 4ème année ISA à l'usine de LAFARGE à Meknès."
+                 android:textSize="17sp" >
+            </TextView>
+        </LinearLayout>
+
+        <!-- Layout 2 for 2nd Screen -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/titreManag2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Visite Entreprise"
+                android:textColor="#191975"
+                android:textSize="25sp"
+                android:textStyle="bold" >
+            </TextView>
+
+           <TextView
+                android:id="@+id/textView2M2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="4AGC : Une visite d'entreprise a été organisée au profit des étudiants de la 4ème année ACG et GF à l'usine de DAHER à Tanger."
+                android:textSize="17sp"
+                android:fontFamily="Times new Roman" >
+            </TextView>
+        </LinearLayout>
+    </ViewFlipper>
+
+    
+
+</LinearLayout>
+</ScrollView>

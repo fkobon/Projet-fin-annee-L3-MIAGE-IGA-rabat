@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+android:orientation="vertical" >
+
+       
+        
+      <info.androidhive.slidingmenu.MarqueeTextView 
+        android:id="@+id/InfoGeneralMang"
+        android:layout_width="wrap_content"
+        android:textColor="#FFFFFF"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="6dip"
+        android:layout_marginTop="6dip"
+        android:background="#26A69A"
+        android:ellipsize="marquee"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:singleLine="true"
+        android:text="Soirée de clôture de la semaine culturelle Africaine 3eme édition vendredi 29 Avril 2015"
+        android:textAppearance="?android:attr/textAppearanceLarge" >
+     </info.androidhive.slidingmenu.MarqueeTextView>
+
+     <TextView
+        android:id="@+id/scroller"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="6sp"
+        android:layout_marginBottom="6dip"
+        android:layout_marginTop="6dip"
+        android:background="#26A69A"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:singleLine="true"
+        android:text="Ecole de Management"
+        android:textAppearance="?android:attr/textAppearanceLarge" >
+     </TextView> 
+        <ViewFlipper
+            android:id="@+id/view_flipper"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_margin="6dip" >
+            
+        <!--  The child Views/Layout to flip -->
+        
+        <!--  Layout 1 for 1st Screen -->
+            <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:text="Visite Entreprise"
+                        android:textColor="#191975"
+                        android:textSize="25dp"
+                        android:textStyle="bold" >
+                    </TextView>
+
+                    <TextView
+                android:id="@+id/textViewManag1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="3ISE : Une visite d'entreprise a été organisée au profit des étudiants de la 3ème année ISE et 4ème année ISA à l'usine de LAFARGE à Meknès."
+                 android:textSize="20sp" >
+            </TextView>
+                    
+            </LinearLayout>
+            
+             <!--  Layout 2 for 2nd Screen -->
+            
+            <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_marginTop="15dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Conférence"
+                        android:textColor="#191975"
+                        android:textSize="25sp"
+                        android:textStyle="bold" >
+                    </TextView>
+
+                    <TextView
+                android:id="@+id/textViewManag2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="3ISE : Une visite d'entreprise a été organisée au profit des étudiants de la 3ème année ISE et 4ème année ISA à l'usine de LAFARGE à Meknès."
+                 android:textSize="20sp" >
+            </TextView>
+                    
+            </LinearLayout>
+
+
+        </ViewFlipper>
+
+</LinearLayout>
